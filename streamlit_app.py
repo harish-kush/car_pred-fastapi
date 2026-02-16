@@ -140,7 +140,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # API endpoint
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://car-pred-fastapi.onrender.com" or "http://127.0.0.1:8000"
 
 # Initialize session state
 if 'prediction_history' not in st.session_state:
@@ -703,4 +703,5 @@ def main():
             st.info("📝 No prediction history available yet.")
 
 if __name__ == "__main__":
+
     main()
